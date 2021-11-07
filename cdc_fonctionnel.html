@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Projet: Velo connecté</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script>
-		$(document).ready(function(){
-			$('#icon').click(function(){
+		$(document).ready(function () {
+			$('#icon').click(function () {
 				$('ul').toggleClass('show');
 			});
-		});	
+		});
 	</script>
 </head>
+
 <body>
 	<!-- Présentation -->
 	<nav>
@@ -23,7 +26,7 @@
 		<ul>
 			<li><a class="active" href="index.html">Présentation</a></li>
 			<li><a href="cdc_fonctionnel.html">CDC Fonctionnel</a></li>
-			<li><a href="#">CDC Technique</a></li>
+			<li><a href="cdc_technique.html">CDC Technique</a></li>
 		</ul>
 		<label id="icon">
 			<i class="fas fa-bars"></i>
@@ -31,297 +34,460 @@
 	</nav>
 	<div class="body">
 
-	<!-- Contexte et définition du projet -->
-	
-	<hr style="border: ridge;">
-	<h3>1. Contexte et définition du projet</h3>
-	<hr style="border: ridge;">
-	<p>Aujourd’hui, l’importance de l’utilisation de moyens de transport non polluants est vitale pour l’environnement en réduisant la pollution et l’utilisation excessive des voitures dans une ville. Chaque jour, différents moyens sont intégrés au marché comme le vélo, le scooter, le skateboard, entre autres, comme une alternative d’utilisation : moins coûteuse, plus sain pour la santé et écologique pour l’environnement. Malheureusement, ce n’est pas un marché aussi vaste, car seulement dans les grandes villes nous pouvons trouver le service de vélos et scooters partagés et la plupart de temps seulement sont disponibles dans quelques endroits de la ville ou des stations pour une période limitée. Cela fait qu’il ne s’agit pas d’un moyen demandé et souhaité par les gens. </p>
+		<!-- Contexte et définition du projet -->
+		<hr style="border: solid;">
+		<div class="card">
+			<div class="card-header">
+				<hr style="border: ridge;">
+				<h3>1. Contexte et définition du projet</h3>
+				<hr style="border: ridge;">
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					<p>Aujourd’hui, l’importance de l’utilisation de moyens de transport non polluants est vitale pour
+						l’environnement en réduisant la pollution et l’utilisation excessive des voitures dans une
+						ville. Chaque
+						jour, différents moyens sont intégrés au marché comme le vélo, le scooter, le skateboard, entre
+						autres,
+						comme une alternative d’utilisation : moins coûteuse, plus sain pour la santé et plus écologique
+						pour
+						l’environnement. Malheureusement, ce n’est pas un marché aussi vaste, car seulement dans les
+						grandes villes
+						nous pouvons trouver le service de vélos et scooters partagés et la plupart de temps seulement
+						sont
+						disponibles dans quelques endroits de la ville ou des stations pour une période limitée. Cela
+						fait qu’il ne
+						s’agit pas d’un moyen demandé et souhaité par les gens. </p>
+				</li>
+			</ul>
+		</div>
+		<hr style="border: solid;">
+		<!-- L’objectif du projet -->
+		<div class="card">
+			<div class="card-header">
+				<hr style="border: ridge;">
+				<h3>2. L’objectif du projet</h3>
+				<hr style="border: ridge;">
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					<p>L’objectif de ce projet concerne au besoin du client, il cherche un système de partage de vélo,
+						dans lequel les utilisateurs inscrits peuvent réserver ou bien louer un type de vélo
+						particulier pendant un temps défini, ce temps doit être souligner sur l'application mobile de
+						l'utilisateur.</p>
+					<p> Il convient souligner que l’application permettra aux utilisateurs visualiser les
+						points d’accès de vélo disponibles dans la ville ainsi que les différents vélos à louer. De la
+						même
+						manière l’application disposera un système de sécurité pour le vélo, c'est-à-dire un système
+						anti-vol et enfin, des alerte en cas de
+						chutes lorsque le vélo est loué par un utilisateur, cette information sera stockée sur
+						l'application.</p>
+					<p>Malgré, à ce moment il n’y a pas dans la ville de Saint-Dié un système concret qui fournit la
+						besoin entièrement du
+						client et même dans les environs
+						pour remplir au besoin. Si bien, il existe actuellement quelques applications pour le
+						partage de vélos qui peuvent remplir la problèmatique, mais ils sont disponibles surtout dans
+						les grandes villes,
+						et qui seront détaillées au point suivant. Pour telle raison, une application mobile/ web seront
+						développés, capables de résoudre le problème.</p>
+				</li>
+			</ul>
+		</div>
+		<hr style="border: solid;">
 
-	<!-- L’objectif du projet -->
-	<a name="cahier"></a>
-	<hr style="border: ridge;">
-	<h3>2. L’objectif du projet</h3>
-	<hr style="border: ridge;">
-	<p>L’objectif de ce projet concerne au besoin du client, il cherche un système de partage de vélo, dans laquelle les utilisateurs inscrits peuvent réserver ou bien louer un type de vélo particulier pendant un temps défini, malgré, à ce moment il n’y a pas dans la ville de Saint-Dié et de même dans les environs un système pour remplir au besoin. Pour telle raison, une application mobile et web seront développés.</p>
-	<p>Il convient souligner que l’application permettra à l’utilisateur visualiser les points d’accès de vélo ainsi que l’application aura un système de sécurité pour le vélo (anti-vol), une alerte en cas de chute, comprenant des indicateurs clignotants de direction et un feu d'alerte de freinage. </p>
+		<!-- Étude Concurrentielle -->
+		<div class="card">
+			<div class="card-header">
+				<hr style="border: ridge;">
+				<h3>3. Étude Concurrentielle</h3>
+				<hr style="border: ridge;">
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					<p>Tout d’abord, il est nécessaire de faire la réalisation d’une étude concurrentielle. Cette étude
+						permettra
+						connaître l'existence de différentes applications sur le marché ainsi pour voir les points forts
+						et les
+						faiblesses de chacune. À ce jour, il existe certaines applications de partage de vélo, on
+						trouvera
+						ci-dessous quelques-unes avec une description détaillée avec leurs fonctionnements respectifs :
+					</p>
+				</li>
+			</ul>
+		</div>
+		<br>
+		<div class="applications">
+			<!-- Applications pour l'étude concurrentielle  -->
+			<table class="table" style="text-align: center;">
+				<thead class="bg-info text-white">
+					<tr>
+						<th scope="col">Application</th>
+						<th scope="col">Points forts</th>
+						<th scope="col">Points faiblesses</th>
+						<th scope="col">Forfaites</th>
+					</tr>
+				</thead>
+				<tbody style="text-align: justify;">
+					<tr>
+						<th scope="row"><a href="https://www.matchmybike.ch/">Match my Bike (Suisse)</a> <br><br> <img
+								src="https://www.matchmybike.ch/img_new/MMB_Symbole_CLR_SMALL.png"
+								style="width: 80px; height: 80px;"> </th>
+						<td>
+							• Sur l’application smartphone, chaque utilisateur indique la gare et la période de
+							disponibilité de son vélo. <br>
+							• La localisation du vélo se fait grâce au signal de l'application qui indique le lieu de
+							stationnement du vélo. <br>
+							• Pour l’accès, l’utilisateur autorisé peut accéder au vélo qu’il a réservé. L'ouverture du
+							cadenas connecté se fait automatiquement grâce à la présence du smartphone, à l'aide de la
+							fonction Bluetooth. <br>
+							• Compatible Bluetooth 4.x (Low Energy) et Bluetooth 5. <br>
+							• L’entreprise vous offre un antivol robuste en forme de U lors de votre inscription. Il
+							s’ouvre
+							avec votre smartphone par connexion Bluetooth.
+						</td>
+						<td>• Les villes pionnières qui accueillent Match my Bike sont 7 (Berne, Bienne, Fribourg,
+							Thoune,
+							Lausanne, Genève et Yverdon). Donc, l’application seulement sert dans ces villes. <br>
+							• Il ne comprend que la partie sécurité (anti-vol) grâce à la localisation du vélo.
+						</td>
+						<td>Abonnement: 60 euros pour 12 mois.</td>
+					</tr>
+					<tr>
+						<th scope="row"><a href="https://www.velib-metropole.fr/en_GB">Vélib (Paris,
+								France)</a><br><br><img
+								src="https://www.velib-metropole.fr/assets/static_files/paris/images/logo_full.png"
+								style="width: 80px; height: 80px;"> </th>
+						<td>• Sur l’application on peut accéder aux vélos mécaniques de couleur verte et des vélos
+							électriques de couleur bleue pour se déplacer d’un point A à un point B.
+							• Pour les usagers moins assidus, des pass 1 ou 7 jours sont mis à leur disposition.
+							• Vélib’ compte aujourd’hui avec 1300 stations et plus de 12 000 vélos en circulation.
+						</td>
+						<td>• L’application a une portée dans la ville de Paris. <br>
+							• Il ne comprend que la partie sécurité (anti-vol) grâce à la localisation du vélo et de la
+							même
+							manière parce que si on va utiliser un vélo il faut avoir la carta avec le code.
+						</td>
+						<td>• La souscription la plus onéreuse coûte 8,30 euros par mois, et vous donne accès
+							gratuitement à
+							un Vélib’ mécanique durant 1h. <br>
+							• Pour un engin électrique, les deux premiers trajets sont gratuits pendant 45 minutes, mais
+							le
+							troisième est facturé 1 euro.</td>
+					</tr>
+					<tr>
+						<th scope="row"><a href="https://www.bicloo.nantesmetropole.fr/">Bicloo (Nantes,
+								France)</a><br><br><img
+								src="https://www.bicloo.nantesmetropole.fr/assets/img/logo-contract.png"
+								style="width: 85px; height: 50px;"></th>
+						<td>• Elle est composée de 123 stations et 1230 vélos (on estime). <br>
+							• Chaque biclooPlus est équipé d’un système antivol avec un verrou autobloquant pour les
+							arrêts
+							temporaires en dehors d'une station (Cette innovation a été activée récemment).
+						</td>
+						<td>• L’application a une portée dans la ville de Nantes.</td>
+						<td>Plusieurs formules vous sont proposées : un forfait gratuit ne vous facture qu’au bout de 30
+							minutes d’utilisation, et d’autres forfaits payants ne coûtent qu’entre 2 et 36 euros selon
+							vos
+							besoins.</td>
+					</tr>
+					<tr>
+						<th scope="row"><a href="https://velov.grandlyon.com/fr/home">Vélo’v (Lyon,
+								France)</a><br><br><img src="https://velov.grandlyon.com/assets/img/logo-contract.png"
+								style="width: 85px; height: 50px;"></th>
+						<td>• Elle est composée de 348 stations et 4000 vélos (on estime). <br>
+							• Elle offre différents plans soit par jour, soit pour toute l’année
+						</td>
+						<td>• L’application a une portée dans la ville de Lyon. <br>
+							• La plupart de formules ont un prix plus élevé en comparaison du Bibloo.
+						</td>
+						<td>Plusieurs formules vous sont proposées : la plupart de formules ont un prix plus élevé en
+							comparaison du Bibloo.</td>
+					</tr>
+					<tr>
+						<th scope="row"><a href="https://location-greenbike.com/?lang=en">Green Bike (La Rochelle,
+								France)</a><br><br><img
+								src="https://location-greenbike.com/wp-content/uploads/2017/11/logo-greenbike.png"
+								style="width: 85px; height: 50px;"></th>
+						<td>• Elle offre différents vélos, soit par la famille, petits et même des vélos
+							électriques.<br>
+							• L'application propose également un casque à l'utilisateur, un panier et spray
+							anti-crevaison. <br>
+							• Elle offre différents plans soit par jour, soit pour toute l’année. <br>
+							• Le point plus fort qui a le service: dispose d’une succursale dans la ville de
+							Saint-Dié-des-Vosges <a href="https://goo.gl/maps/BrZDdoS87TtpFVFR7">(Regarder la carte)</a>
+							dans laquelle on peut loeur des vélos à différents prix.
+						</td>
+						<td>• Si bien, le service inclus: Casque, Anti-vol, Spray anti-crevaison et Panier sur demande,
+							mais ils seront disponibles sous réserve de disponibilité.
+						</td>
+						<td>L’application offre différents forfaits et prix en fonction du vélo.<br>
+							• <b><i>Manhattan 28'':</i></b> <br> 2h = <b>6€</b>, 4h = <b>10€</b>, 1 jour =
+							<b>14€</b>.<br>
+							• <b><i>VTT Montagne:</i></b> <br> 2h = <b>10€</b>, 4h = <b>15€</b>, 1 jour = <b>18€</b>.
+							<br>
+							• <b><i>Child trailer:</i></b> <br> 2h = <b>6€</b>, 4h = <b>9€</b> 1 jour = <b>12€</b>. <br>
+							• <b><i>Electric:</i></b> <br> 2h = <b>14€</b>, 4h = <b>18€</b> 1 jour = <b>28€</b>.
+						</td>
+					</tr>
 
-	<!-- Étude Concurrentielle -->
-	
-	<hr style="border: ridge;">
-	<h3>3. Étude Concurrentielle</h3>
-	<hr style="border: ridge;">
-	<p>Tout d’abord, il est nécessaire de faire la réalisation d’une étude concurrentielle. Cette étude permettra connaître l'existence de différentes applications sur le marché ainsi pour voir les points forts et les faiblesses de chacune. À ce jour, il existe certaines applications de partage de vélo, on trouvera ci-dessous quelques-unes avec une description détaillée avec leurs fonctionnements respectifs : </p>
-	
-	<!-- Applications pour l'étude concurrentielle  -->
-	<table class="table" style="text-align: center;">
-  		<thead class="thead-light">
-   		 	<tr>
-     	 		<th scope="col">Application</th>
-      			<th scope="col">Points forts</th>
-      			<th scope="col">Points faiblesses</th>
-      			<th scope="col">Forfaites</th>
-    		</tr>
-  		</thead>
-  		<tbody style="text-align: justify;">
-    		<tr>
-      			<th scope="row">Match my Bike (Suisse) <br><br> <img src="https://www.matchmybike.ch/img_new/MMB_Symbole_CLR_SMALL.png" style="width: 50px; height: 50px;"> </th>
-      			<td>
-      				• Sur l’application smartphone, chaque utilisateur indique la gare et la période de disponibilité de son vélo. <br>
-					• La localisation du vélo se fait grâce au signal de l'application qui indique le lieu de stationnement du vélo. <br>
-					• Pour l’accès, l’utilisateur autorisé peut accéder au vélo qu’il a réservé. L'ouverture du cadenas connecté se fait automatiquement grâce à la présence du smartphone, à l'aide de la fonction Bluetooth. <br>
-					• Compatible Bluetooth 4.x (Low Energy) et Bluetooth 5. <br>
-					• L’entreprise vous offre un antivol robuste en forme de U lors de votre inscription. Il s’ouvre avec votre smartphone par connexion Bluetooth.
-      			</td>
-      			<td>• Les villes pionnières qui accueillent Match my Bike sont 7 (Berne, Bienne, Fribourg, Thoune, Lausanne, Genève et Yverdon). Donc, l’application seulement sert dans ces villes. <br>
-				• Il ne comprend que la partie sécurité (anti-vol) grâce à la localisation du vélo.
-				</td>
-      			<td>Abonnement: 60 euros pour 12 mois.</td>
-   			</tr>
-   			<tr>
-      			<th scope="row">Vélib (Paris, France) <br><br><img src="https://www.velib-metropole.fr/assets/static_files/paris/images/logo_full.png" style="width: 50px; height: 50px;"> </th>
-      			<td>• Sur l’application on peut accéder aux vélos mécaniques de couleur verte et des vélos électriques de couleur bleue pour se déplacer d’un point A à un point B. 
-				• Pour les usagers moins assidus, des pass 1 ou 7 jours sont mis à leur disposition. 
-				• Vélib’ compte aujourd’hui avec 1300 stations et plus de 12 000 vélos en circulation. 
-				</td>
-      			<td>• L’application a une portée dans la ville de Paris. <br>
-					• Il ne comprend que la partie sécurité (anti-vol) grâce à la localisation du vélo et de la même manière parce que si on va utiliser un vélo il faut avoir la carta avec le code.
-				</td>
-      			<td>• La souscription la plus onéreuse coûte 8,30 euros par mois, et vous donne accès gratuitement à un Vélib’ mécanique durant 1h. <br>
-				• Pour un engin électrique, les deux premiers trajets sont gratuits pendant 45 minutes, mais le troisième est facturé 1 euro.</td>
-   			</tr>
-    		<tr>
-      			<th scope="row">Bicloo (Nantes, France)<br><br><img src="https://www.bicloo.nantesmetropole.fr/assets/img/logo-contract.png" style="width: 80px; height: 50px;"></th>
-      			<td>• Elle est composée de 123 stations et 1230 vélos (on estime). <br>
-      				• Chaque biclooPlus est équipé d’un système antivol avec un verrou autobloquant pour les arrêts temporaires en dehors d'une station (Cette innovation a été activée récemment).
-      			</td>
-      			<td>• L’application a une portée dans la ville de Nantes.</td>
-      			<td>Plusieurs formules vous sont proposées : un forfait gratuit ne vous facture qu’au bout de 30 minutes d’utilisation, et d’autres forfaits payants ne coûtent qu’entre 2 et 36 euros selon vos besoins.</td>
-    		</tr>
-    		<tr>
-      			<th scope="row">Vélo’v (Lyon, France)<br><br><img src="https://velov.grandlyon.com/assets/img/logo-contract.png" style="width: 80px; height: 50px;"></th>
-      			<td>• Elle est composée de 348 stations et 4000 vélos (on estime). <br>
-      				• Elle offre différents plans soit par jour, soit pour toute l’année 
-      			</td>
-      			<td>• L’application a une portée dans la ville de Lyon. <br>
-      				• La plupart de formules ont un prix plus élevé en comparaison du Bibloo. 
-      			</td>
-      			<td>Plusieurs formules vous sont proposées : la plupart de formules ont un prix plus élevé en comparaison du Bibloo.</td>
-    		</tr>
-    		<tr>
-      			<th scope="row">ShareABike (Canberra, Australia)<br><br><img src="https://www.shareabike.com.au/wp-content/uploads/2017/10/SaBRGB700.png" style="width: 80px; height: 50px;"></th>
-      			<td>• Le système compte 9 stations, 52 vélos adultes, 5 vélos électriques, 17 vélos enfants, 2 sièges bambins, 2 remorques vélo. <br>
-      				• L'application propose également un cadenas, des cartes et un casque à l'utilisateur. 
-      			</td>
-      			<td>• C’est un service seulement disponible dans l’Australie, plus précise dans la capital Canberra. 
-      			</td>
-      			<td>Le prix par heure est de 1,5 dollars. </td>
-    		</tr>
-    		
-  		</tbody>
-	</table>
+				</tbody>
+			</table>
 
-	<p>Nous pourrions continuer en analysant différentes applications de partage de vélo, mais comme nous pouvons le voir, la plupart des applications n’ont qu’une portée à l’intérieur d’une ville ou de certaines parties des stations, de sorte qu’aucune ne peut satisfaire les besoins de notre client. En outre, ils ne possèdent qu’une partie des caractéristiques demandées par le client : anti-vol, si bien est une chose important mail il manque d’autres.</p>
+			<p>Nous pourrions continuer en analysant différentes applications de partage de vélo, mais comme nous
+				pouvons le
+				voir, la plupart des applications n’ont qu’une portée à l’intérieur d’une ville ou de certaines parties
+				des
+				stations, de sorte qu’aucune ne peut satisfaire les besoins de notre client. En outre, ils ne possèdent
+				qu’une partie des caractéristiques demandées par le client : anti-vol, si bien est une chose important
+				mais il manque la partie en cas de chute. L'application la plus proche pour résoudre au besoin du client
+				est Green Bike, disponible dans la ville mais sans complètement le faire.</p>
+		</div>
+		<hr style="border: solid;">
 
-	<!-- Description fonctionnelle des besoins -->
-	
-	<hr style="border: ridge;">
-	<h3>4. Description fonctionnelle des besoins</h3>
-	<hr style="border: ridge;">
-	<img src="img/bete-a-cornes.jpg" style="margin-left: 12%;">
-	<!-- Description fonctionnelle d système  -->
-	<table class="table" style="text-align: center;">
-		<thead class="thead-dark">
-			<tr>
-				<th>EXIGENCES FONCTIONNELLES</th>
-			</tr>
-		</thead>
-	</table>
-	<table class="table" style="text-align: center;">
-  		<thead class="thead-dark">
-   		 	<tr>
-     	 		<th scope="col">N</th>
-      			<th scope="col">Exigence</th>
-      			<th scope="col">Description</th>
-      			<th scope="col">Priorité</th>
-    		</tr>
-  		</thead>
-  		<tbody style="text-align: justify;">
-    		<tr>
-      			<th scope="row">1</th>
-      			<td>Création de comptes.</td>
-      			<td>Le système permettra aux utilisateurs créer des comptes avec leurs informations personnelles pour l'utilisation de l'application mobile.</td>
-      			<td>Élevée.</td>
-   			</tr>
-   			<tr>
-      			<th scope="row">2</th>
-      			<td>Validation de la compte pour l'accès au système.</td>
-      			<td>Les utilisateurs pourront accéder au système à travers d'un nom d'utilisateur et un mot de passe fait précédemment. </td>
-      			<td>Élevée.</td>
-   			</tr>
-    		<tr>
-      			<th scope="row">3</th>
-      			<td>Création d'un espace partagé pour un vélo sur l'application.</td>
-      			<td>Les utilisateurs qui sont propriétaires d'un vélo, ils pourront l'ajouter dans leur espace partagé, il faut enregistrer le type de vélo, la date de disponibilité et la localisation du vélo.</td>
-      			<td>Élevée.</td>
-    		</tr>
-    		<tr>
-      			<th scope="row">4</th>
-      			<td>Gestion de espace partagé de vélo.</td>
-      			<td>Les propriétaires peuvent gérer leurs vélos de partage, en modifiant le type de vélo, la date de disponibilité et la localisation de vélo ainsi  que l'élimination d'un vélo sur l'application.</td>
-      			<td>Élevée.</td>
-   			</tr>
-   			<tr>
-      			<th scope="row">5</th>
-      			<td>Consultation de vélos partagés.</td>
-      			<td>Les propriétaires peuvent consulter leurs vélos partagés, en regardant sur l'application une liste avec le type du vélo, la date de l'utilisation et la localisation.</td>
-      			<td>Élevée.</td>
-   			</tr>
-    		<tr>
-      			<th scope="row">6</th>
-      			<td>Demande de vélo. </td>
-      			<td>Les utilisateurs qui cherchent un vélo pourront le demander ou bien annuler la demande, en indiquant le type de vélo, la date de début et de fin de l'utilisation et le point de la localitation du vélo souhaité entre les vélos disponibles.</td>
-      			<td>Élevée.</td>
-    		</tr>
-    		<tr>
-      			<th scope="row">7</th>
-      			<td>Consultation de vélos demandés.</td>
-      			<td>Les utilisateurs peuvent consulter les dernières vélos demandés , en regardant sur l'application une liste avec le type du vélo, la durée de l'utilisation et la localisation.  </td>
-      			<td>Élevée.</td>
-   			</tr>
-   			<tr>
-      			<th scope="row">8</th>
-      			<td>Gestion du profil de l'utilisateur.</td>
-      			<td>Les utilisateurs pourront modifier leurs informations personelles sur l'application.</td>
-      			<td>Élevée.</td>
-   			</tr>
-    		<tr>
-      			<th scope="row">9</th>
-      			<td>Affichage des alertes en cas de chute.</td>
-      			<td>Les utilisateurs seront alertés en cas de chute du vélo à travers de l'application.</td>
-      			<td>Élevée.</td>
-    		</tr>
-  		</tbody>
-	</table>
+		<!-- Description fonctionnelle des besoins -->
+		<div class="card">
+			<div class="card-header">
+				<hr style="border: ridge;">
+				<h3>4. Description fonctionnelle des besoins</h3>
+				<hr style="border: ridge;">
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					<img src="img/bete-a-cornes.jpg" class="card-img-top">
+				</li>
+			</ul>
+		</div>
+		<br>
+		<!-- Description fonctionnelle d système  -->
+		<table class="table" style="text-align: center;">
+			<thead class="thead-dark">
+				<tr>
+					<th>EXIGENCES FONCTIONNELLES</th>
+				</tr>
+			</thead>
+		</table>
+		<table class="table" style="text-align: center;">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">N</th>
+					<th scope="col">Exigence</th>
+					<th scope="col">Description</th>
+					<th scope="col">Priorité</th>
+				</tr>
+			</thead>
+			<tbody style="text-align: justify;">
+				<tr>
+					<th scope="row">1</th>
+					<td>Création de comptes.</td>
+					<td>Le système permettra aux utilisateurs créer des comptes avec leurs informations personnelles
+						pour l'utilisation de l'application mobile.</td>
+					<td>Élevée.</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Validation de la compte pour l'accès au système.</td>
+					<td>Les utilisateurs pourront accéder au système à travers d'un nom d'utilisateur et un mot de passe
+						fait précédemment. </td>
+					<td>Élevée.</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Création d'un espace partagé pour un vélo sur l'application.</td>
+					<td>Les utilisateurs qui sont propriétaires d'un vélo, ils pourront l'ajouter dans leur espace
+						partagé, il faut enregistrer le type de vélo, la date de disponibilité et la localisation du
+						vélo.</td>
+					<td>Élevée.</td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>Gestion de espace partagé de vélo.</td>
+					<td>Les propriétaires peuvent gérer leurs vélos de partage, en modifiant le type de vélo, la date de
+						disponibilité et la localisation de vélo ainsi que l'élimination d'un vélo sur l'application.
+					</td>
+					<td>Élevée.</td>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>Consultation de vélos partagés.</td>
+					<td>Les propriétaires peuvent consulter leurs vélos partagés, en regardant sur l'application une
+						liste avec le type du vélo, la date de l'utilisation et la localisation.</td>
+					<td>Élevée.</td>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>Demande de vélo. </td>
+					<td>Les utilisateurs qui cherchent un vélo pourront le demander ou bien annuler la demande, en
+						indiquant le type de vélo, la date de début et de fin de l'utilisation et le point de la
+						localitation du vélo souhaité entre les vélos disponibles.</td>
+					<td>Élevée.</td>
+				</tr>
+				<tr>
+					<th scope="row">7</th>
+					<td>Consultation de vélos demandés.</td>
+					<td>Les utilisateurs peuvent consulter les dernières vélos demandés , en regardant sur l'application
+						une liste avec le type du vélo, la durée de l'utilisation et la localisation. </td>
+					<td>Élevée.</td>
+				</tr>
+				<tr>
+					<th scope="row">8</th>
+					<td>Gestion du profil de l'utilisateur.</td>
+					<td>Les utilisateurs pourront modifier leurs informations personelles sur l'application.</td>
+					<td>Élevée.</td>
+				</tr>
+				<tr>
+					<th scope="row">9</th>
+					<td>Affichage des alertes en cas de chute.</td>
+					<td>Les utilisateurs seront alertés en cas de chute du vélo à travers de l'application.</td>
+					<td>Élevée.</td>
+				</tr>
+			</tbody>
+		</table>
 
-	<!-- Description non fonctionnelle du système  -->
-	<table class="table" style="text-align: center;">
-		<thead class="thead-light">
-			<tr>
-				<th>EXIGENCES NON FONCTIONNELLES</th>
-			</tr>
-		</thead>
-	</table>
-	<table class="table" style="text-align: center;">
-  		<thead class="thead-light">
-   		 	<tr>
-     	 		<th scope="col">N</th>
-      			<th scope="col">Exigence</th>
-      			<th scope="col">Description</th>
-      			<th scope="col">Niveau d'exigences</th>
-    		</tr>
-  		</thead>
-  		<tbody style="text-align: justify;">
-    		<tr>
-      			<th scope="row">1</th>
-      			<td>Interface simple et détaillée.</td>
-      			<td>L'interface du système sera compréhensible et simple par l'utilisateur avec un aspect visuel satisfaisant. C'est-à-dire, un menu bien organisé, intuitif et d'icônes liées à sa fonction pour un comprehension rapide.</td>
-      			<td>Ne pas utiliser de couleurs dangeureuses et agressives. Il faut suivre que 4 couleurs.</td>
-   			</tr>
-   			<tr>
-      			<th scope="row">2</th>
-      			<td>Portabilité sur les aplications dévelopées.</td>
-      			<td>Le système doit fonctionner sur différentes plates-formes, soit pour l'ordinateur ou  portable (en tant d'Android, IOS).</td>
-      			<td>Le système doit fonctionner sur tous les navigateurs Web modernes et s’adapter à différentes résolutions d’écran.</td>
-   			</tr>
-    		<tr>
-      			<th scope="row">3</th>
-      			<td>Sécurité de code.</td>
-      			<td>Le client aura le code développé et le responsable de projet ne pourra pas le divulguer.</td>
-      			<td>Le code source appartiendra au client et le programmateur n’aura pas le droit d’en faire usage.</td>
-    		</tr>
-    		
-  		</tbody>
-	</table>
+		<!-- Description non fonctionnelle du système  -->
+		<table class="table" style="text-align: center;">
+			<thead class="thead-light">
+				<tr>
+					<th>EXIGENCES NON FONCTIONNELLES</th>
+				</tr>
+			</thead>
+		</table>
+		<table class="table" style="text-align: center;">
+			<thead class="thead-light">
+				<tr>
+					<th scope="col">N</th>
+					<th scope="col">Exigence</th>
+					<th scope="col">Description</th>
+					<th scope="col">Niveau d'exigences</th>
+				</tr>
+			</thead>
+			<tbody style="text-align: justify;">
+				<tr>
+					<th scope="row">1</th>
+					<td>Interface simple et détaillée.</td>
+					<td>L'interface du système sera compréhensible et simple par l'utilisateur avec un aspect visuel
+						satisfaisant. C'est-à-dire, un menu bien organisé, intuitif et d'icônes liées à sa fonction pour
+						un comprehension rapide.</td>
+					<td>Ne pas utiliser de couleurs dangeureuses et agressives. Il faut suivre que 4 couleurs.</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Portabilité sur les aplications dévelopées.</td>
+					<td>Le système doit fonctionner sur différentes plates-formes, soit pour l'ordinateur ou portable
+						(en tant d'Android, IOS).</td>
+					<td>Le système doit fonctionner sur tous les navigateurs Web modernes et s’adapter à différentes
+						résolutions d’écran.</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Sécurité de code.</td>
+					<td>Le client aura le code développé et le responsable de projet ne pourra pas le divulguer.</td>
+					<td>Le code source appartiendra au client et le programmateur n’aura pas le droit d’en faire usage.
+					</td>
+				</tr>
 
-	<!--5. Devis -->
-	
-	<hr style="border: ridge;">
-	<h3>5. Devis</h3>
-	<hr style="border: ridge;">
-	<p>Pour le développement du projet, il n’y a qu’un seul développeur, qui supervisera et réalisera chacune des étapes de l’achèvement du système. Un total de 14 semaines seront consacrées à cet événement,'est-à-dire, un total de 420 heures (5 jours par semaine avec une journée de 6 heures). Il est prévu un contrat d’un an, qui permettrait au client de la partie de maintenance pendant cette période.</p>
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th scope="col">Étape</th>
-				<th scope="col">Nombre d'heures</th>
-				<th scope="col">Prix</th>
-				<th scope="col">Total</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th scope="row">Conception</th>
-				<td>72</td>
-				<td>35.00 €</td>
-				<td>2520 €</td>
-			</tr>
-			<tr>
-				<th scope="row">Développement</th>
-				<td>240</td>
-				<td>35.00 €</td>
-				<td>8400 €</td>
-			</tr>
-			<tr>
-				<th scope="row">Test</th>
-				<td>30</td>
-				<td>35.00 €</td>
-				<td>1050 €</td>
-			</tr>
-			<tr>
-				<th scope="row">Maintenance</th>
-				<td>42</td>
-				<td>35.00 €</td>
-				<td>1470 €</td>
-			</tr>
-			<tr>
-				<th></th>
-				<td></td>
-				<td></td>
-				<th>13,440 €</th>
-			</tr>
-		</tbody>
-	</table> 
-	
-	<p>*Il convient de noter que la partie de la base de données est en attente, car différentes options doivent d’abord être analysées.</p>
+			</tbody>
+		</table>
 
-	<!--6. Planning prévisionnel -->
-	
-	<hr style="border: ridge;">
-	<h3>6. Planning prévisionnel</h3>
-	<hr style="border: ridge;">
-	<p>Comme j'ai mentionné dans le point précédent, on travaillera 5 jours par semaine avec une journée de 6 heures. Nous avons un total de 70 jours de travail (5 jours par 14 semaines = 70 jours). L'image suivante montre le planning prévisionnel avec les étapes et leurs durées : </p>
-	<div class="diagramme-gantt">
-		<img src="img/diagramme-gantt.jpg" alt="Planning prévisionnel">
+		<!--5. Devis -->
+
+		<hr style="border: ridge;">
+		<h3>5. Devis</h3>
+		<hr style="border: ridge;">
+		<p>Pour le développement du projet, il n’y a qu’un seul développeur, qui supervisera et réalisera chacune des
+			étapes de l’achèvement du système. Un total de 14 semaines seront consacrées à cet événement,'est-à-dire, un
+			total de 420 heures (5 jours par semaine avec une journée de 6 heures). Il est prévu un contrat d’un an, qui
+			permettrait au client de la partie de maintenance pendant cette période.</p>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">Étape</th>
+					<th scope="col">Nombre d'heures</th>
+					<th scope="col">Prix</th>
+					<th scope="col">Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Conception</th>
+					<td>72</td>
+					<td>28.00 €</td>
+					<td>2016 €</td>
+				</tr>
+				<tr>
+					<th scope="row">Développement</th>
+					<td>240</td>
+					<td>28.00 €</td>
+					<td>6720 €</td>
+				</tr>
+				<tr>
+					<th scope="row">Test</th>
+					<td>30</td>
+					<td>28.00 €</td>
+					<td>840 €</td>
+				</tr>
+				<tr>
+					<th scope="row">Maintenance</th>
+					<td>42</td>
+					<td>28.00 €</td>
+					<td>1176 €</td>
+				</tr>
+				<tr>
+					<th>TVA</th>
+					<td></td>
+					<td></td>
+					<th>2150€</th>
+				</tr>
+				<tr>
+					<th></th>
+					<td></td>
+					<td></td>
+					<th>12,902€</th>
+				</tr>
+			</tbody>
+		</table>
+
+		<!--6. Planning prévisionnel -->
+
+		<hr style="border: ridge;">
+		<h3>6. Planning prévisionnel</h3>
+		<hr style="border: ridge;">
+		<p>Comme j'ai mentionné dans le point précédent, on travaillera 5 jours par semaine avec une journée de 6
+			heures. Nous avons un total de 70 jours de travail (5 jours par 14 semaines = 70 jours). L'image suivante
+			montre le planning prévisionnel avec les étapes et leurs durées en jours : </p>
+		<div class="diagramme-gantt">
+			<img src="img/diagramme-gantt.jpg" alt="Planning prévisionnel">
+		</div>
+
+		<!--BIBLIOGRAPHIE -->
+		<hr style="border: solid;">
+		<div class="card">
+			<div class="card-header">
+				<hr style="border: ridge;">
+				<h3>Bibliographie</h3>
+				<hr style="border: ridge;">
+			</div>
+			<ul>
+				<li>- Bicloo. (n.d). <em>Offers.</em> Bicloo. <br>
+					https://www.bicloo.nantesmetropole.fr/fr/offers/groups/list#75720 .</li>
+				<li>- Frandoid. (2021, 28 août). <em> Location de vélos en libre-service : les
+						applications à
+						connaître.</em> Frandoid.
+					https://www.frandroid.com/produits-android/mobilite-urbaine/velo-electrique/789201_location-de-velos-en-libre-service-les-applications-a-connaitre .
+				</li>
+				<li>- MathMyBike. (n.d). <em>Fonctionnement.</em> Math My Bike.
+					https://www.matchmybike.ch/</li>
+				<li>- Vélo'v. (n.d). <em>Home.</em> Vélo'v. https://velov.grandlyon.com/fr/home</li>
+				<li>- Green Bike. (n.d). <em>Prices.</em> Green Bike. https://location-greenbike.com/?lang=en.</li>
+			</ul>
+		</div>
 	</div>
-
-	<!--BIBLIOGRAPHIE -->
-	<hr style="border: ridge;">
-	<h3>Bibliographie</h3>
-	<hr style="border: ridge;">
-	<ul>
-		<li type="square">Bicloo. (n.d). <em>Offers.</em> Bicloo. https://www.bicloo.nantesmetropole.fr/fr/offers/groups/list#75720</li>
-		<li type="square">Frandoid. (2021, 28 août). <em> Location de vélos en libre-service : les applications à connaître.</em> Frandoid. https://www.frandroid.com/produits-android/mobilite-urbaine/velo-electrique/789201_location-de-velos-en-libre-service-les-applications-a-connaitre</li>
-		<li type="square">MathMyBike. (n.d). <em>Fonctionnement.</em> Math My Bike. https://www.matchmybike.ch/</li>
-		<li type="square">Vélo'v. (n.d). <em>Home.</em> Vélo'v. https://velov.grandlyon.com/fr/home</li>
-	</ul>
-	</div>
+	<br>
 	<!-- Footer -->
 	<footer class="bg-dark text-center text-white">
- 	
-  		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-   		 © 2021 Torres Morales Gerson
-  		</div>
+
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			© 2021 Torres Morales Gerson
+		</div>
 
 	</footer>
 </body>

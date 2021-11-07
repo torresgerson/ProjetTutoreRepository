@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Projet: Velo connecté</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script>
-		$(document).ready(function(){
-			$('#icon').click(function(){
+		$(document).ready(function () {
+			$('#icon').click(function () {
 				$('ul').toggleClass('show');
 			});
-		});	
+		});
 	</script>
 </head>
+
 <body>
 	<!-- Présentation -->
 	<nav>
@@ -23,33 +26,53 @@
 		<ul>
 			<li><a class="active" href="index.html">Présentation</a></li>
 			<li><a href="cdc_fonctionnel.html">CDC Fonctionnel</a></li>
-			<li><a href="#">CDC Technique</a></li>
+			<li><a href="cdc_technique.html">CDC Technique</a></li>
 		</ul>
 		<label id="icon">
 			<i class="fas fa-bars"></i>
 		</label>
 	</nav>
 	<div class="body">
-	<hr style="border: solid;">
-	<h4>Projet 2 : Vélo Connecté </h4>
-	<hr style="border: solid;">
-	<p><strong>Étudiant : </strong> TORRES MORALES Gerson Jireh</p>
-	<p><strong>Tuteur : </strong> MEDINA Emmanuel</p>
-	<p><strong>Mot clés : </strong> Sécurité, transport, mobilité durable, partage</p>
-	<p><strong>LP AMIO 2021-22</strong></p>
-	<hr style="border: solid;">
-	<p><strong>Partie 1</strong></p>
-	<p>Concevoir une application de partage de vélo. Les utilisateurs inscrits peuvent réserver un type de vélo particulier. Concevoir une application mobile qui donne l'alerte en cas de chute.</p>
-	<p><strong>Partie 2</strong></p>
-	<p>Réaliser un sytème de sécurité pour vélo, comprenant des indicateurs clignotants de direction, un feu d'alerte de freinange, une détection de chute, un anti-vol.</p>
-	
+	<!-- Projet -->
+		<hr style="border: solid;">
+		<h4>Projet 2 : Vélo Connecté </h4>
+		<hr style="border: solid;">
+		<p><strong>Étudiant : </strong> TORRES MORALES Gerson Jireh</p>
+		<p><strong>Tuteur : </strong> MEDINA Emmanuel</p>
+		<p><strong>Mot clés : </strong> Sécurité, transport, mobilité durable, partage</p>
+		<p><strong>LP AMIO 2021-22</strong></p>
+		<hr style="border: solid;">
 	</div>
+	<div class="card">
+		<div class="card-header">
+			<h5><strong>Partie 1</strong></h5>
+		</div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">
+				<p>Concevoir une application de partage de vélo. Les utilisateurs inscrits peuvent réserver un type
+					de vélo particulier. Concevoir une application mobile qui donne l'alerte en cas de chute.</p>
+			</li>
+		</ul>
+	</div>
+	<br>
+
+	<div class="card">
+		<div class="card-header">
+			<h5><strong>Partie 2</strong></h5>
+		</div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">
+				<p>Réaliser un sytème de sécurité pour vélo, comprenant d'une détection de chute et un anti-vol.</p>
+			</li>
+		</ul>
+	</div>
+	<br>
 	<!-- Footer -->
 	<footer class="bg-dark text-center text-white">
- 	
-  		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-   		 © 2021 Torres Morales Gerson
-  		</div>
+
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			© 2021 Torres Morales Gerson
+		</div>
 
 	</footer>
 </body>

@@ -1,6 +1,6 @@
 body{
-			font-family: arial;
-			text-align: justify;
+	font-family: arial;
+	text-align: justify;
 }
 
 *{
@@ -15,6 +15,9 @@ nav{
 	height: 80px;
 	width: 100%;
 	background: #23456e;
+	position: fixed;
+	top: 0px;
+	
 }
 
 label.projet{
@@ -72,6 +75,10 @@ nav #icon{
 	nav a{
 		font-size: 17px;
 	}
+
+	body{
+		margin-top: 20%;
+	}
 }
 
 @media (max-width: 900px){
@@ -105,11 +112,23 @@ nav #icon{
 	nav ul.show{
 		left: 0;
 	}
+
+	body{
+		margin-top: 20%;
+	}
 }
 
 .body{
+	margin-top: 8%;
+}
+
+.body, .card, .applications{
 	margin-left: 2%;
 	margin-right: 2%;
+}
+
+.card, .card-header, .list-group-item{
+	position: inherit;
 }
 
 .diagramme-gantt{
