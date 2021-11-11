@@ -10,30 +10,37 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('#icon').click(function () {
-				$('ul').toggleClass('show');
-			});
-		});
-	</script>
 </head>
 
 <body>
 	<!-- Présentation -->
-	<nav>
-		<label class="projet">Vélo connecté</label>
-		<ul>
-			<li><a class="active" href="index.html">Présentation</a></li>
-			<li><a href="cdc_fonctionnel.html">CDC Fonctionnel</a></li>
-			<li><a href="cdc_technique.html">CDC Technique</a></li>
-		</ul>
-		<label id="icon">
-			<i class="fas fa-bars"></i>
-		</label>
-	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: #23456e;">
+				<a class="navbar-brand" href="index.html">Vélo connecté</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link active">Présentation</a>
+						</li>
+						<li class="nav-item">
+							<a href="cdc_fonctionnel.html" class="nav-link">CDC Fonctionnel</a>
+						</li>
+						<li class="nav-item">
+							<a href="cdc_technique.html" class="nav-link">CDC Technique</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
 	<div class="body">
-	<!-- Projet -->
+		<!-- Projet -->
 		<hr style="border: solid;">
 		<h4>Projet 2 : Vélo Connecté </h4>
 		<hr style="border: solid;">
@@ -66,15 +73,25 @@
 			</li>
 		</ul>
 	</div>
-	<br>
-	<!-- Footer -->
-	<footer class="bg-dark text-center text-white">
+	<br><br><br>
 
-		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	<!-- Footer -->
+	<footer class="bg-dark text-center text-white fixed-bottom">
+
+		<div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
 			© 2021 Torres Morales Gerson
 		</div>
 
 	</footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	crossorigin="anonymous"></script>
 
 </html>
