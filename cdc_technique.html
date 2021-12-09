@@ -54,7 +54,7 @@
 						doivent comprendre en tant que le développement mobile, la base de données et le capteur
 						d’alerte en cas d’un antivol du vélo.</p>
 					<p><b>Développement mobile </b></p>
-					<p><b><i>Onsen UI :</i></b><img src="img/onsen.png"
+					<p><b><i><a href="https://onsen.io/">Onsen UI :</a></i></b><img src="img/onsen.png"
 							style="width: 80px; height: 100px; float: right; margin-top: -10px; margin-left: 3px; margin-right: auto;">
 						Onsen UI est un Framework open source pour créer des applications Web
 						progressives (PWAs) et des applications hybrides. Il est basé sur PhoneGap et Cordova. Les
@@ -65,13 +65,14 @@
 					<p>Onsen UI peut être utilisé avec plusieurs frameworks en tant de JavaScript, AngularJS (1, 2+),
 						ReactJS et
 						JQuery. Grâce à Onsen UI, des applications mobiles peuvent être créées à l’aide de technologies
-						Web en tant de HTML5, CSS et JavaScript. C’est pourquoi il a été décidé de réaliser une
+						Web en tant de <b>HTML5, CSS</b> et <b>JavaScript</b>. C’est pourquoi il a été décidé de
+						réaliser une
 						application web progressive, on peut l’utiliser soit par l’ordinateur ou bien pour le mobile en
 						utilisant simplement ces technologies, au lieu d’utiliser des langages natifs pour le
 						développement mobile et qu’ils ne permettent pas de créer des applications web. Notre cliente
 						pourra faire d’usage de l’application n’importe quel appareil une fois installée.</p>
 					<p><b>Gestionnaires de Bases de Données</b></p>
-					<p><b><i>MySQL :</i></b><img
+					<p><b><i><a href="https://www.mysql.com/">MySQL :</a></i></b><img
 							src="https://upload.wikimedia.org/wikipedia/fr/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png"
 							style="width: 150px; height: 100px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
 						C’est un système open source pour la gestion de base de données relationnelle
@@ -84,14 +85,80 @@
 						données relationnelle, parce que les données à gérer ainsi que doivent être organisées et que
 						les tableaux seront liés les uns aux autres.</p>
 					<p><b>Components (Anti-vol)</b></p>
-					<p><b><i>ESP32 :</i></b><img
-							src=""
-							style="width: 150px; height: 100px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
+					<p><b><i><a href="https://www.arduino.cc/en/software">Arduino :</a></i></b><img
+							src="https://www.wizcase.com/wp-content/uploads/2020/10/ArduinoLogo.png"
+							style="width: 120px; height: 80px; float: right; margin-top: -1px; margin-left: 5px; margin-right: auto;">
+						Tout d’abord, il faut souligner notre environnement du développement pour les components à
+						utiliser. Le projet sera développé dans l’IDE Arduino, c’est une plateforme ouverte (open
+						source) écrite en fonctions C et C ++, il est utilisé pour écrire et charger des programmes sur
+						des plaques compatibles avec Arduino. C’est grâce à sa facilité et l’énorme communauté qu’il
+						compte, que j’ai décidé choisir l’IDE Arduino.
 					</p>
-					<p><b><i>Capteur HC-SR501 : </i></b><img
-						src=""
-						style="width: 150px; height: 100px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
-				</p>
+					<p><b><i><a href="https://www.espressif.com/en/products/socs/esp32">ESP32 :</a> </i></b><img
+							src="https://cdn.shopify.com/s/files/1/1509/1638/products/devkitcmain1er.jpg?v=1605876225"
+							style="width: 100px; height: 110px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
+						Il s’agit d’une série de microcontrôleurs système sur une puce, peu coûteuse et accessible sur
+						le marché (le prix est compris entre 10 euros). Il dispose d’une connectivité Wifi et Bluetooth.
+						Bien qu’il soit légèrement plus cher
+						que l’ESP8266, l’ESP32 est amélioré en matière de Bluetooth 4.0, de chiffrement par hardware,
+						capteurs, horloge temps réel (RTC). Enfin, il offre plus de ports et plus de bus. C’est grâce à
+						ses points favorables qu’on a décidé d’utiliser ce microcontrôleur pour ce projet.
+					</p>
+					<p><b><i><a href="">Capteur HC-SR501 :</a></i></b><img
+							src="https://1.bp.blogspot.com/-B5kQBCafySA/WuYOgU5R5WI/AAAAAAAAALY/O0s8o0ssbsoC7AUVmGfQ51nh0Hzk3lcaACPcBGAYYCw/s1600/HC-SR501.png"
+							style="width: 145px; height: 130px; float: right; margin-top: -30px; margin-left: 5px; margin-right: auto;">
+						En continuant avec les composants du projet, il est nécessaire de faire usage d’un capteur de
+						mouvement, qui nous permettra de le manipuler avec l’ESP32 pour pouvoir alerter l’utilisateur
+						lorsque le vélo lance la fonction de surveillance et il soit pris par quelqu’un d’autre. Après
+						une recherche et de réaliser une comparaison, il sera nécessaire d’utiliser le capteur PIR
+						(Passive InfraRed sensor = Capteur infrarouge passif) HC-SR501. <br><br>Ce capteur compte avec
+						différentes lentilles de Frenel, ils permettent de regarder et envoyer l’image d’une zone de
+						détection sur le capteur. Le prix est d’environ 3-5 euros sur le marché. Parmi les
+						caractéristiques principales :
+
+					<table class="table table-striped text-center">
+						<thead>
+							<tr>
+								<th scope="col">Propriétés</th>
+								<th scope="col">Caractéristiques</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Portée de détection</th>
+								<td>7 mètres</td>
+							</tr>
+							<tr>
+								<th scope="row">Angle opérationnel</th>
+								<td>120°</td>
+							</tr>
+							<tr>
+								<th scope="row">Tension d’alimentation</th>
+								<td>5V – 20V</td>
+							</tr>
+							<tr>
+								<th scope="row">Consommation</th>
+								<td>65mA</td>
+							</tr>
+							<tr>
+								<th>Sortie TTL</th>
+								<td>3.3V, 0V</td>
+							</tr>
+							<tr>
+								<th>Temps de verrouillage</th>
+								<td>0.2 sec à 3s selon fabricant</td>
+							</tr>
+							<tr>
+								<th>Température</th>
+								<td>– 15 à +70°C</td>
+							</tr>
+							<tr>
+								<th>Dimension</th>
+								<td>32*24 mm</td>
+							</tr>
+						</tbody>
+					</table>
+					</p>
 				</li>
 			</ul>
 		</div>
