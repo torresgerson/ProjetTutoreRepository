@@ -174,12 +174,25 @@
 					<p>Comme mentionné ci-dessus, le langage SQL sera employé dans le gestionnaire de base de données
 						MySQL Workbench. Pour ce projet, il a été décidé d’utiliser un modèle entité-relation (ER), dans
 						lequel les entités suivantes ont été définies : </p>
-					<p><b>-Personne</b></p>
-					<p><b>-Administrateur</b></p>
-					<p><b>-Utilisateur</b></p>
-					<p><b>-Velo</b></p>
-					<p><b>-Reservation</b></p>
-					<p><b>-</b></p>
+					<p><b>- Personne :</b> C’est l’entité père entre l’utilisateur et l’administrateur. Parmi les champs
+						qui component cette entité, ils se trouvent le mail et le mot de passe pour pouvoir accéder à
+						l’application. Le mot de passe est encrypté grâce à la fonction AES qui nous donne MySQL.</p>
+					<p><b>- Administrateur :</b> Cette entité nous permet de stocker les informations des
+						administrateurs
+						de l’application, mais plus important, elle nous permet d’attribuer l’accès afin que les
+						administrateurs puissent modifier l’informations des vélos. </p>
+					<p><b>- Utilisateur :</b> Les données de l’utilisateur sont stockées dans l’entité Utilisateur avec
+						leurs
+						informations personnelles : adresse, téléphone et de naissance.</p>
+					<p><b>- Velo :</b> Les donnés de chaque vélo sont stockées dans cette entité. Les utilisateurs
+						seulement peuvent regarder (à manière de consulte) les types de vélo, le tarif et la
+						localisation sur l’application.</p>
+					<p><b>- Reservation :</b> Les réservations réalisées par les utilisateurs sont stockées ici, avec la
+						date de réalisation, le période d’utilisation et le prix total.</p>
+					<p><b>- DetailReservation :</b> Il faut créer une entité intermédiaire entre le vélo et la
+						réservation afin que les utilisateurs puissent ajouter plus d’un vélo dans une même réservation.
+						L’entité reçoive les deux id du tableau velo et reservation en tant de foreign keys.</p>
+					<img src="img/Model_VeloConnecte.png" class="card-img-top" title="Bête-a-cornes">
 				</li>
 			</ul>
 		</div>
