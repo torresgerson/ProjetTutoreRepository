@@ -134,7 +134,7 @@
 					</p>
 					<p><b><i><a href="">Capteur DHT-22 :</a></i></b><img
 							src="https://www.gotronic.fr/ori-capteur-de-t-et-d-humidite-dht22-20719.jpg"
-							style="width: 100px; height: 100px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
+							style="width: 80px; height: 80px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
 						En continuant avec les composants du projet, il est nécessaire de faire usage d’un capteur de
 						température et d’humidité, qui nous permettra de le manipuler avec l’ESP8266 pour pouvoir
 						monitorer ces valeurs pendant le trajet d’un utilisateur lorsque le vélo est réservé. Après une
@@ -173,8 +173,47 @@
 								<td>0.2 sec à 3s selon fabricant</td>
 							</tr>
 							<tr>
-								<th>Dimension</th>
+								<th>Dimensions</th>
 								<td>25 * 15 * 9 mm</td>
+							</tr>
+						</tbody>
+					</table>
+					</p><br>
+					<p><b><i><a href="https://www.arduino.cc/en/software">Servomoteur :</a></i></b><img
+							src="https://www.aranacorp.com/wp-content/uploads/towerpro-servo-sg90.jpg"
+							style="width: 100px; height: 100px; float: right; margin-top: -25px; margin-left: 5px; margin-right: auto;">
+						Enfin, un servomoteur est utilisé pour effectuer la partie de détection des chutes pour chaque
+						vélo. L’angle de celle-ci doit être identique à l’angle d’inclinaison pendant le trajet. Ayant
+						90 comme angle de référence. <br><br>
+						Ces données seront également stockées sur la plate-forme Adafruit IO avec la température et
+						l’humidité. Parmi les caractéristiques principales :
+					<table class="table table-striped text-center">
+						<thead>
+							<tr>
+								<th scope="col">Propriétés</th>
+								<th scope="col">Caractéristiques</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Rotation</th>
+								<td>180°</td>
+							</tr>
+							<tr>
+								<th scope="row">Vitesse</th>
+								<td>0,12 sec/60° sous 4,5 V</td>
+							</tr>
+							<tr>
+								<th scope="row">Tension d’alimentation</th>
+								<td>4,5V à 6V</td>
+							</tr>
+							<tr>
+								<th>Poids </th>
+								<td>9 g</td>
+							</tr>
+							<tr>
+								<th>Dimensions</th>
+								<td>22,8 * 11,6 * 23,6 mm</td>
 							</tr>
 						</tbody>
 					</table>
