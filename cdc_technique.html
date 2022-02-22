@@ -51,11 +51,11 @@
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item">
 					<p>Tout d’abord, il faut choisir les technologies à utiliser pour la réalisation du projet, ils
-						doivent comprendre en tant que le développement mobile, la base de données et le capteur
-						d’alerte en cas d’un antivol du vélo.</p>
-					<p><b>Développement mobile </b></p>
+						doivent comprendre en tant que le développement de la progressive web app, la base de données et
+						le capteur de température et détection en cas d’une chute des vélos.</p>
+					<p><b>Développement PWA </b></p>
 					<p><b><i><a href="https://onsen.io/">Onsen UI :</a></i></b><img src="img/onsen.png"
-							style="width: 80px; height: 100px; float: right; margin-top: -10px; margin-left: 3px; margin-right: auto;">
+							style="width: 50px; height: 60px; float: right; margin-top: -70px; margin-left: 3px; margin-right: auto;">
 						Onsen UI est un Framework open source pour créer des applications Web
 						progressives (PWAs) et des applications hybrides. Il est basé sur PhoneGap et Cordova. Les
 						applications Web progressives (PWAs) sont créées avec le but d’offrir une fiabilité et une
@@ -65,16 +65,15 @@
 					<p>Onsen UI peut être utilisé avec plusieurs frameworks en tant de JavaScript, AngularJS (1, 2+),
 						ReactJS et
 						JQuery. Grâce à Onsen UI, des applications mobiles peuvent être créées à l’aide de technologies
-						Web en tant de <b>HTML5, CSS</b> et <b>JavaScript</b>. C’est pourquoi il a été décidé de
-						réaliser une
-						application web progressive, on peut l’utiliser soit par l’ordinateur ou bien pour le mobile en
-						utilisant simplement ces technologies, au lieu d’utiliser des langages natifs pour le
-						développement mobile et qu’ils ne permettent pas de créer des applications web. Notre cliente
-						pourra faire d’usage de l’application n’importe quel appareil une fois installée.</p>
+						Web en tant de <b>HTML5, CSS</b> et <b>JavaScript</b>. Ces dernières étant choisies pour le
+						développement de l’application. De même, l’utilisation de la librairie <b>Bootstrap</b> sera
+						largement
+						utilisée dans le projet, afin d’obtenir de meilleurs résultats dans l’interface web ou mobile,
+						tout en respectant à tout moment un design responsif.</p>
 					<p><b>Gestionnaires de Bases de Données</b></p>
 					<p><b><i><a href="https://www.mysql.com/">MySQL :</a></i></b><img
 							src="https://upload.wikimedia.org/wikipedia/fr/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png"
-							style="width: 150px; height: 100px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
+							style="width: 100px; height: 50px; float: right; margin-top: -60px; margin-left: 5px; margin-right: auto;">
 						C’est un système open source pour la gestion de base de données relationnelle
 						(RDBMS). Une base de données relationnelle permet d’entreposer et d’organiser les données
 						structurées sous forme de tableaux liés entre eux. Nous pouvons définir MySQL en tant qu’un
@@ -82,36 +81,65 @@
 						données d'une base de données, parmi les actions disponibles : créer, lire, mettre en jour et
 						supprimer (CRUD en anglais).</p>
 					<p>En raison des caractéristiques du projet à développer, il a été décidé d’utiliser une base de
-						données relationnelle, parce que les données à gérer ainsi que doivent être organisées et que
-						les tableaux seront liés les uns aux autres.</p>
-					<p><b>Components (Anti-vol)</b></p>
+						données relationnelle, parce que les données à gérer doivent être organisées et les tableaux
+						seront liés les uns aux autres.</p>
+					<p><b>Langage côté serveur</b></p>
+					<p><b><i><a href="https://www.java.com/es/">Java :</a></i></b><img
+							src="https://img-0.journaldunet.com/HfJq3WeEZD8WMieqZqeiYTk_9MQ=/1500x/smart/218d741508034c0aaf1e4c246f54756d/ccmcms-jdn/12420397.jpg"
+							style="width: 100px; height: 60px; float: right; margin-top: -70px; margin-left: 5px; margin-right: auto;">
+						Pour l’échange de données entre notre application et la base de données, il est nécessaire
+						d’utiliser un langage côté serveur. Java a été choisi pour cela. Un langage open source qui
+						permet la programmation orientée objet. Pour utiliser Java, il est nécessaire d’avoir le JDK,
+						qui est un ensemble de bibliothèques et de
+						logiciels de développement pour la création d’applications en Java, ainsi que le compilateur et
+						l’interpréteur Java.</p>
+					<p>Un IDE est également nécessaire, notre environnement de développement intégré sera Netbeans, qui
+						nous permet de versionner le projet comme Github et fournit divers outils pour une
+						implémentation simple.</p>
+					<p>Le projet suivra le MVC (Modèle, Vue, Contrôleur). Les classes seront définies avec java, qui
+						sont des entités (objets) avec des attributs et des méthodes. Les contrôleurs seront le lien
+						entre la vue et le modèle. Enfin, la vue correspond à toute la logique de l’interface de
+						l’utilisateur.</p>
+					<p><b>Serveur Web</b></p>
+					<p><b><i><a href="https://httpd.apache.org/">Apache :</a></i></b><img
+							src="https://desarrolloweb.com/storage/tag_images/actual/nzShTvdaGzLCIO0FalGMkhnqXIcXcIwXABW9b4JU.png"
+							style="width: 110px; height: 70px; float: right; margin-top: -70px; margin-left: 5px; margin-right: auto;">
+						Pour faire fonctionner le serveur qui hébergera notre application lors de la création du projet,
+						il a été choisi d’utiliser Apache qui est intégré sur Netbeans.</p>
+					<p><b>Components (Objets Connectés)</b></p>
 					<p><b><i><a href="https://www.arduino.cc/en/software">Arduino :</a></i></b><img
 							src="https://www.wizcase.com/wp-content/uploads/2020/10/ArduinoLogo.png"
-							style="width: 120px; height: 80px; float: right; margin-top: -1px; margin-left: 5px; margin-right: auto;">
+							style="width: 90px; height: 50px; float: right; margin-top: -60px; margin-left: 5px; margin-right: auto;">
 						Tout d’abord, il faut souligner notre environnement du développement pour les components à
 						utiliser. Le projet sera développé dans l’IDE Arduino, c’est une plateforme ouverte (open
 						source) écrite en fonctions C et C ++, il est utilisé pour écrire et charger des programmes sur
 						des plaques compatibles avec Arduino. C’est grâce à sa facilité et l’énorme communauté qu’il
 						compte, que j’ai décidé choisir l’IDE Arduino.
 					</p>
-					<p><b><i><a href="https://www.espressif.com/en/products/socs/esp32">ESP32 :</a> </i></b><img
-							src="https://cdn.shopify.com/s/files/1/1509/1638/products/devkitcmain1er.jpg?v=1605876225"
-							style="width: 100px; height: 110px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
-						Il s’agit d’une série de microcontrôleurs système sur une puce, peu coûteuse et accessible sur
-						le marché (le prix est compris entre 10 euros). Il dispose d’une connectivité Wifi et Bluetooth.
-						Bien qu’il soit légèrement plus cher
-						que l’ESP8266, l’ESP32 est amélioré en matière de Bluetooth 4.0, de chiffrement par hardware,
-						capteurs, horloge temps réel (RTC). Enfin, il offre plus de ports et plus de bus. C’est grâce à
-						ses points favorables qu’on a décidé d’utiliser ce microcontrôleur pour ce projet.
+					<p><b><i><a href="https://www.arduino.cc/en/software">Adafruit IO :</a></i></b><img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Adafruit_logo.svg/2560px-Adafruit_logo.svg.png"
+							style="width: 80px; height: 40px; float: right; margin-top: -40px; margin-left: 5px; margin-right: auto;">
+						C’est un service cloud qui nous permet de surveiller les données et de réaliser des rayons de
+						contrôle en ligne et tout communiqué avec le protocole simple et efficace MQTT. Si bien, il
+						possède certaines limitations, mais ses avantages se trouvent dans la facilité d’utilisation, un
+						service gratuit et entièrement fonctionnel.
 					</p>
-					<p><b><i><a href="">Capteur HC-SR501 :</a></i></b><img
-							src="https://1.bp.blogspot.com/-B5kQBCafySA/WuYOgU5R5WI/AAAAAAAAALY/O0s8o0ssbsoC7AUVmGfQ51nh0Hzk3lcaACPcBGAYYCw/s1600/HC-SR501.png"
-							style="width: 145px; height: 130px; float: right; margin-top: -30px; margin-left: 5px; margin-right: auto;">
+					<p><b><i><a href="https://www.espressif.com/en/products/socs/esp32">ESP8266 :</a> </i></b><img
+							src="https://www.gmelectronic.com/data/product/1024_1024/pctdetail.775-054.1.jpg"
+							style="width: 80px; height: 90px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
+						Il s’agit d’une série de microcontrôleurs système sur une puce, bon marché et accessible sur le
+						marché (le prix est compris entre 5-10 euros). Il dispose d’une connectivité Wifi et Bluetooth.
+						Il supporte IPv4 et les protocoles TCP/UDP/HTTP/FTP. C’est grâce à ses points favorables qu’on a
+						décidé d’utiliser ce microcontrôleur pour ce projet.
+					</p>
+					<p><b><i><a href="">Capteur DHT-22 :</a></i></b><img
+							src="https://www.gotronic.fr/ori-capteur-de-t-et-d-humidite-dht22-20719.jpg"
+							style="width: 100px; height: 100px; float: right; margin-top: -15px; margin-left: 5px; margin-right: auto;">
 						En continuant avec les composants du projet, il est nécessaire de faire usage d’un capteur de
-						mouvement, qui nous permettra de le manipuler avec l’ESP32 pour pouvoir alerter l’utilisateur
-						lorsque le vélo lance la fonction de surveillance et il soit pris par quelqu’un d’autre. Après
-						une recherche et de réaliser une comparaison, il sera nécessaire d’utiliser le capteur PIR
-						(Passive InfraRed sensor = Capteur infrarouge passif) HC-SR501. <br><br>Ce capteur compte avec
+						température et d’humidité, qui nous permettra de le manipuler avec l’ESP8266 pour pouvoir
+						monitorer ces valeurs pendant le trajet d’un utilisateur lorsque le vélo est réservé. Après une
+						recherche et de réaliser une comparaison, il sera nécessaire d’utiliser le capteur DHT22.
+						<br><br>Ce capteur compte avec
 						différentes lentilles de Frenel, ils permettent de regarder et envoyer l’image d’une zone de
 						détection sur le capteur. Le prix est d’environ 3-5 euros sur le marché. Parmi les
 						caractéristiques principales :
@@ -125,36 +153,28 @@
 						</thead>
 						<tbody>
 							<tr>
-								<th scope="row">Portée de détection</th>
-								<td>7 mètres</td>
+								<th scope="row">Gamme d'humidité</th>
+								<td>0-100% (précision 2% à 5%)</td>
 							</tr>
 							<tr>
-								<th scope="row">Angle opérationnel</th>
-								<td>120°</td>
+								<th scope="row">Gamme de température</th>
+								<td>-40°C à 80°C (précision ±0.5°C)</td>
 							</tr>
 							<tr>
 								<th scope="row">Tension d’alimentation</th>
-								<td>5V – 20V</td>
+								<td>3V à 5V</td>
 							</tr>
 							<tr>
 								<th scope="row">Consommation</th>
-								<td>65mA</td>
-							</tr>
-							<tr>
-								<th>Sortie TTL</th>
-								<td>3.3V, 0V</td>
+								<td>2.5mA max</td>
 							</tr>
 							<tr>
 								<th>Temps de verrouillage</th>
 								<td>0.2 sec à 3s selon fabricant</td>
 							</tr>
 							<tr>
-								<th>Température</th>
-								<td>– 15 à +70°C</td>
-							</tr>
-							<tr>
 								<th>Dimension</th>
-								<td>32*24 mm</td>
+								<td>25 * 15 * 9 mm</td>
 							</tr>
 						</tbody>
 					</table>
@@ -192,7 +212,7 @@
 					<p><b>- DetailReservation :</b> Il faut créer une entité intermédiaire entre le vélo et la
 						réservation afin que les utilisateurs puissent ajouter plus d’un vélo dans une même réservation.
 						L’entité reçoive les deux id du tableau velo et reservation en tant de foreign keys.</p>
-					<img src="img/Model_VeloConnecte.png" class="card-img-top" title="Bête-a-cornes">
+					<img src="img/Model_VeloConnecte.png" class="card-img-top" title="Model_BD">
 				</li>
 			</ul>
 		</div>
