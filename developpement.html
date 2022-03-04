@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet: Velo connecté</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <!-- Présentation -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: #23456e;">
+                <a class="navbar-brand" href="index.html">Vélo connecté</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Présentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cdc_fonctionnel.html" class="nav-link">CDC Fonctionnel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cdc_technique.html" class="nav-link">CDC Technique</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="developpement.html" class="nav-link active">Développement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bibliographie.html" class="nav-link">Bibliographie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="body">
+
+    </div>
+    <!-- Exécution -->
+    <div style="margin-left: 2%; margin-right: 2%;">
+        <hr style="border: solid;">
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <hr style="border: ridge;">
+            <h3>3.1 Exécution</h3>
+            <hr style="border: ridge;">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <p>Avant de commencer l’exécution du projet, il était nécessaire de définir l’architecture
+                    à suivre du projet. Comme c’était indiqué dans le point 2.1.3 qui correspond à Java, il a été
+                    choisi le cadre MVC (Modelé, Vue, Contrôleur) en raison d’une bonne organisation du code.
+                    Dans lequel notre modèle est une entité qui contient les attributs (champs) et ses méthodes
+                    Setters et Getters. Les contrôleurs sont responsables de la logique et l’intermédiaire entre
+                    le modelé et la vue. Enfin, il se trouve la vue qui se concentre sur l'affichage des données.
+                    La suivante figure montre cette fonctionnalité et comme ils sont liés entre eux.</p>
+                <img src="https://koenig-media.raywenderlich.com/uploads/2016/04/diagram-mvc-480x241.png"
+                    class="card-img-top" title="MVC">
+            </li>
+        </ul>
+    </div>
+
+    <!-- Exécution -->
+    <div style="margin-left: 2%; margin-right: 2%;">
+        <hr style="border: solid;">
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <hr style="border: ridge;">
+            <h3>3.2 Base de données</h3>
+            <hr style="border: ridge;">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <p>Grâce au logiciel de MySQL Workbench, nous pouvons gérer nos bases de données
+                    avec l’interface intégrée. La base de données pour le projet compte avec la définition de
+                    DDL (Data Definition Language) dans lequel nos entités ont été définies. D’ailleurs, il a été
+                    développé les views afin de ne pas accéder aux données directes, c’est-à-dire, sans avoir
+                    besoin d’afficher ou d’exposer la source. Le dossier Stored Procedures contient toutes les
+                    procédures à utiliser dans la partie de services REST et les contrôleurs.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Serveur Web -->
+    <div style="margin-left: 2%; margin-right: 2%;">
+        <hr style="border: solid;">
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <hr style="border: ridge;">
+            <h3>3.3 Serveur Web</h3>
+            <hr style="border: ridge;">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <p>
+                    Notre serveur Apache Tomcat est intégré sur Netbeans lors de son installation et configuration. Il
+                    est utilisé juste après l'exécution de notre projet. Il nous permet de gérer du contenu web
+                    dynamique basé sur Java tout en utilisant le protocole HTTP.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Application Web -->
+    <div style="margin-left: 2%; margin-right: 2%;">
+        <hr style="border: solid;">
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <hr style="border: ridge;">
+            <h3>3.4 Application</h3>
+            <hr style="border: ridge;">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="media/Vélapp_User.mp4"
+                        allowfullscreen></iframe>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Test -->
+    <div style="margin-left: 2%; margin-right: 2%;">
+        <hr style="border: solid;">
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <hr style="border: ridge;">
+            <h3>3.5 Test</h3>
+            <hr style="border: ridge;">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <p>
+                    Le logiciel SoapUI a été utilisé dans le but de tester les services RESTful réalisés à
+                    consommer sur l’application. Bien qu’il existe différents choix comme Postman, ils sont très
+                    similaires, les deux options nous permettent de gagner du temps en vérifiant que nos
+                    services sont corrects en utilisant requête (GET, POST, PUT, DELETE).
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Clôture -->
+    <div style="margin-left: 2%; margin-right: 2%;">
+        <hr style="border: solid;">
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <hr style="border: ridge;">
+            <h3>3.6 Clôture</h3>
+            <hr style="border: ridge;">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <p>
+                    L’un des grands avantages de notre filière correspond au changement constant dans
+                    nos applications, il y a toujours la possibilité d’ajouter ou retirer des fonctionnalités en raison
+                    des besoins. Afin que le projet obtienne une meilleure expérience pour l’utilisateur, je mettre
+                    en évidence de mise en œuvre si le client le souhaite dans le système :
+                </p>
+                <p>● Ajouter des fonctionnalités pour stocker la géolocalisation de chaque vélo. </p>
+                <p>● Accès au vélo grâce au Bluetooth et des cadenas qui permettent l’antivol.</p>
+                <p>● Verrouillage de vélo à la fin de la date d’une réservation.</p>
+                <p>● Consommation d'API pour se connecter via les réseaux sociaux.</p>
+                <p>● Affichage sur l’application web les valeurs des objets connectées recollectées.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Conclusion -->
+    <div style="margin-left: 2%; margin-right: 2%;">
+        <hr style="border: solid;">
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <hr style="border: ridge;">
+            <h3>Conclusion</h3>
+            <hr style="border: ridge;">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <p>
+                    Le présent projet a été réalisé pendant les semaines consacrées au projet tutoré.
+                    Bien qu’il n’y ait pas un client réel, c’est moi-même qui a créé tout en partant de zéro. En
+                    raison de nombre de personnes pour la réalisation, c’était nécessaire de réduire le nombre
+                    de capteurs et objets connectés pour le projet, mais on a bien mené l’application avec le
+                    capteurs élus en utilisant une plateforme Cloud tout comme Adafruit IO.
+                </p>
+                <p>
+                    C’est énormément gratifiant la possibilité d’apprendre de nouvelles technologies et
+                    de maitriser celles déjà connues pour l’avenir. Malgré les conflits générés dans les semaines
+                    de développement et toutes les difficultés rencontrées, je donné beaucoup de mon temps
+                    en dehors de ce qui est indiqué pour réaliser une application capable de remplir les besoins
+                    de client.
+                </p>
+                <p>
+                    Grâce à cette expérience, j’ai beaucoup appris, mais aussi, elle m’a permis de
+                    connaître quelles étaient mes faiblesses et sur quelles compétences je dois travailler à
+                    l’avenir pour être un bon professionnel. Les bases pour mener un projet sont la
+                    persévérance et donner le meilleur de soi-même parce que ce n’est jamais facile.
+
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <br><br><br>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white fixed-bottom">
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Torres Morales Gerson
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</html>

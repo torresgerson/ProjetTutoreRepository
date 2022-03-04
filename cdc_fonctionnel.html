@@ -33,6 +33,12 @@
 						<li class="nav-item">
 							<a href="cdc_technique.html" class="nav-link">CDC Technique</a>
 						</li>
+						<li class="nav-item">
+							<a href="developpement.html" class="nav-link">Développement</a>
+						</li>
+						<li class="nav-item">
+							<a href="bibliographie.html" class="nav-link">Bibliographie</a>
+						</li>
 					</ul>
 				</div>
 			</nav>
@@ -58,7 +64,7 @@
 						Malheureusement, ce n’est pas un marché aussi vaste, car seulement dans les grandes villes
 						(métropolitaines) nous pouvons trouver le service de vélos et scooters partagés. La plupart de
 						temps, ils sont disponibles dans quelques endroits de la ville ou des stations pour une période
-						limitée. Cela fait qu’il ne s’agit pas d’un moyen demandé et souhaité par le public.</p>
+						limitée. Cela fait qu’il ne s’agit pas d’un moyen si demandé par le public.</p>
 				</li>
 			</ul>
 		</div>
@@ -74,7 +80,7 @@
 				<li class="list-group-item">
 					<p>L’objectif de ce projet concerne au besoin du client. Il veut mettre en disposition différentes
 						vélos sur un système capable de gérer des réservations. Ils seront réalisés pour les
-						utilisateurs inscrits sur l’application mobile, ils peuvent indiquer quel type de vélo et la
+						utilisateurs inscrits sur l’application développée, ils peuvent indiquer quel type de vélo et la
 						durée d’utilisation. Ce temps, il doit également être indiqué sur l'application par
 						l’utilisateur.
 					</p>
@@ -135,8 +141,8 @@
 			<thead class="bg-info text-white">
 				<tr>
 					<th scope="col">Application</th>
-					<th scope="col">Points forts</th>
-					<th scope="col">Points faiblesses</th>
+					<th scope="col">Avantages</th>
+					<th scope="col">Inconvénients</th>
 					<th scope="col">Prix</th>
 				</tr>
 			</thead>
@@ -164,8 +170,7 @@
 						<br>
 					</td>
 					<td>• L’application mobile est gratuite ainsi que le web, il faut s'inscrire pour pouvoir réserver
-						ou mettre en dispositions des vélos. <br>
-						• Abonnement pour les utilisateurs : 60 euros pour 12 mois.</td>
+						ou mettre en dispositions des vélos.</td>
 				</tr>
 				<tr>
 					<th scope="row"><a href="https://www.velib-metropole.fr/en_GB">Vélib (Paris,
@@ -245,7 +250,8 @@
 					<td>• Il n’est pas possible de faire des réservations pour Saint-Dié-des-Vosges depuis le site
 						web.<br><br>
 						• Elle ne dispose pas d’une application mobile. <br><br>
-						• En l’absence d’une app mobile ou d’une application web pour la succursale à Saint-Dié, les gens
+						• En l’absence d’une app mobile ou d’une application web pour la succursale à Saint-Dié, les
+						gens
 						doivent soit aller physiquement pour effectuer le processus soit entrer en contact avec leurs
 						réseaux sociaux comme Facebook, ce qui n’est pas pratique.
 					</td>
@@ -308,23 +314,156 @@
 				</p>
 				<p>
 					De plus, ils sont de services qui ont déjà leurs propres vélos et tarifs. Il n’y pas un service
-					capable de gérer les besoins de notre client. Pour telle raison, une progressive web application (PWA)
+					capable de gérer les besoins de notre client. Pour telle raison, une progressive web application
+					(PWA)
 					sera développée afin de résoudre le problème de notre client.
 				</p>
 			</li>
 		</ul>
+		<hr style="border: solid;">
+		<!-- Description fonctionnelle des besoins -->
+		<div class="card">
+			<div class="card-header">
+				<hr style="border: ridge;">
+				<h3>1.5 Cadre Théorique</h3>
+				<hr style="border: ridge;">
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					<p><b><i>1.5.1 Développement PWA</i></b></p>
+					<p><b>Netbeans</b></p>
+					<p>NetBeans est un environnement de développement intégré (IDE) pour Java, qui permet également de
+						supporter autres langages, comme Python, C, C++, XML et HTML. De plus, Netbeans est disponible
+						sous Windows, Linux ou Mac OS. </p>
+					<p>C'est un IDE moderne, il permet d'accéder rapidement à la documentation détaillée, de naviguer
+						dans les sources et d’effectuer des recherches d'usage des classes, méthodes et propriétés.
+						Netbeans indique à l'utilisateur les erreurs et fait des propositions pour y remédier. L'EDI
+						NetBeans fournit des outils pour construire tous les composants Java EE, ce qui inclut les
+						Enterprise Java Beans (EJBs), les pages web, les servlets, et les services web. (Dayre, P.
+						2012).
+					</p>
+					<p><b>HTML</b></p>
+					<p>HTML (HyperText Markup Language), c’est un format de présentation de données permettant la
+						création des pages web qui peuvent être lues dans des navigateurs. Selon l’enseignant de
+						l’Université Nice Sophia Antipolis Lozi (n, d.), HTML c’est un format descriptif des
+						paragraphes, images, liens et tableaux en utilisant une grammaire à base de balises.</p>
+					<p>Ce n’est pas un langage de programmation qui permet de structures conditionnelles (if, else) ou
+						de boucles (for, while) par exemple. Pour programmer, il faudra utiliser un langage de
+						programmation côte client comme Javascript ou côte serveur (PHP, Java, Perl).
+					</p>
+					<p><b>Bootstrap</b></p>
+					<p>C’est un framework CSS développé par l’équipe de Twitter. Il correspond à un ensemble de
+						librairies regroupées (fichiers CSS et JavaScript) pour créer des design complexes de manière
+						relativement simple.</p>
+					<p>Parmi les avantages de l’utilisation de ce framework se trouvent le gain de temps de
+						développement, une certaine robustesse dans l’architecture globale du code et la gigantesque
+						communauté en ligne. (Giraud P, n, d.).
+					</p>
+					<p><b><i>1.5.2 Gestionnaires de Bases de Données</i></b></p>
+					<p><b>MySQL </b></p>
+					<p>C’est un système open source pour la gestion de base de données relationnelle (RDBMS). Une base
+						de données relationnelle permet d’entreposer et d’organiser les données structurées sous forme
+						de tableaux liés entre eux. Nous pouvons définir MySQL en tant qu’un Système de Gestion de Base
+						de Données (SGBD), c’est-à-dire, un logiciel capable de manipuler les données d'une base de
+						données. Parmi les actions que nous pouvons effectuer se trouvent la création, lecture, mettre
+						en jour et suppression. (Bastien, L, 2020).</p>
+					<p><b>PhpMyAdmin</b></p>
+					<p>C’est une application web qui permet de gérer un serveur de bases de données MySQL. Dans un
+						environnement multi-utilisateur, cette interface écrite en PHP permet également de donner à un
+						utilisateur un accès à ses propres bases de données. Parmi les principales fonctionnalités se
+						trouvent la gestion des utilisateurs et leurs privilèges, importation/exportation de bases de
+						données dans différents formats, la gestion de bases de données, tables, champs et index.
+						(Tournoy, R. 2010).
+					</p>
+					<p><b><i>1.5.3 Langage côte serveur</i></b></p>
+					<p><b>Java</b></p>
+					<p>C’est un langage de programmation orientée objet, il était développé par Sun Microsystems, et
+						maintenant faire partie de l’entreprise Oracle. Le principal avantage de Java est son
+						interopérabilité, c’est-à-dire, la technologie fonctionne aussi bien sur Windows que Mac ou
+						Linux, et sur une myriade d'appareils : ordinateur, téléphone mobile, périphériques TV, consoles
+						de jeux, appareils connectés.</p>
+					<p>Elle est notamment au cœur du système d'exploitation Android, et exploitée dans le monde entier
+						pour développer des applications mobiles, des jeux, du contenu Web ou des logiciels
+						d'entreprise. Le langage Java permet notamment de développer des forums, des formulaires en
+						ligne, d'écrire des applications, ou créer des programmes exécutables dans un navigateur web.
+						(Deluzarche C, n. d.)</p>
+					<p><b>Javascript</b></p>
+					<p>C’est un langage de script populaire permettant d’ajouter des fonctionnalités interactives et
+						d’autres contenus web dynamiques aux pages web. Parmi les exemples plus connus : les
+						formulaires, les diaporamas de galeries de photos et les graphiques animés. À différence de Java
+						qui est un langage compilé, JavaScript est un langage interprété qui est interprété ligne par
+						ligne au moment de l’exécution. Enfin, JavaScript est réservé aux navigateurs du client.
+						(Kinsta, 2020).
+					</p>
+					<p><b><i>1.5.4 Serveur Web</i></b></p>
+					<p><b>Apache Tomcat </b></p>
+					<p>C’est une implémentation open source en tant de serveur web pour les applications web réalisées
+						en Java. Il permet d'exécuter des applications web reposant sur les technologies servlets et
+						JSP. (Doudoux J, n.d.)</p>
+					<p><b>Api REST</b></p>
+					<p>Appelés aussi services web RESTful, REST utilise des méthodes via HTTP (GET, POST) pour récupérer
+						et publier des données entre un périphérique client et un serveur.
+					</p>
+					<p><b><i>1.5.5 Objets connectés</i></b></p>
+					<p><b>Arduino</b></p>
+					<p>C’est une plateforme ouverte (open source) écrite en fonctions C et C ++, il est utilisé pour
+						écrire et charger des programmes sur des plaques compatibles avec Arduino.</p>
+					<p><b>Adafruit IO</b></p>
+					<p>C’est une solution pour la construction d’applications IoT créée par la société Adafruit. Cette
+						service cloud nous permet de surveiller des données et de réaliser des rayons de contrôle en
+						ligne et tout communiqué avec le protocole simple et efficace MQTT en basant sur de
+						plates-formes comme Arduino, Raspberry pi, ESP32 ou l’ESP8266.
+					</p>
+
+					<p><b>ESP32</b></p>
+					<p>Le module ESP32 est une solution Wi-Fi/Bluetooth tout-en-un, intégrée et certifiée qui fournit
+						non seulement la radio sans fil, mais aussi un processeur intégré avec des interfaces pour se
+						connecter à plusieurs périphériques.</p>
+					<p><b>Capteur DHT22</b></p>
+					<p>Le DHT22 est un capteur numérique de base et à faible coût, nous permet de mesurer de manière
+						facile et efficace la température et l'humidité en raison de sa combinaison deux en un d'un
+						capteur d'humidité capacitif et d'une thermistance. D’ailleurs, il se connecte facilement grâce
+						à un signal numérique sur un seul fil.
+					</p>
+					<p><b>Servomoteur</b></p>
+					<p>Un servomoteur tourne certes sur un axe, en général l’angle va de 0 à 180°. C’est un moteur
+						continu équipé d'un réducteur (des engrenages). L’un des objectifs de l’usage de cet objet se
+						trouve pour garder la valeur de l’angle.
+					</p>
+				</li>
+			</ul>
+		</div>
+
+
 		<hr style="border: solid;">
 
 		<!-- Description fonctionnelle des besoins -->
 		<div class="card">
 			<div class="card-header">
 				<hr style="border: ridge;">
-				<h3>1.5 Description fonctionnelle des besoins</h3>
+				<h3>1.6 Description fonctionnelle des besoins</h3>
 				<hr style="border: ridge;">
 			</div>
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item">
 					<img src="img/bete-a-cornes.jpg" class="card-img-top" title="Bête-a-cornes">
+					<p>Les exigences décrivent ce que le système doit faire, c’est-à-dire ses exigences fonctionnelles
+						et non fonctionnelles souhaitables par notre client. La saisie des exigences permet de
+						comprendre ce que les clients et les utilisateurs finaux attendent du système à développer.
+						C’est ici, dans le cahier des charges qui ont été les établis.</p>
+					<p>
+						L’analyse des besoins permettra de mener à bien le projet, et il est donc très important de le
+						réaliser avant de commencer le développement de l’application. De plus, c’est grâce au cahier de
+						charges que nous pouvons formaliser le projet avec le client car il précis toutes les
+						informations nécessaires pour la réalisation, développement et la livraison du projet.</p>
+					<p>
+						Les Tableaux 1.2 et 1.3 détaillent les exigences que le système doit réaliser et qui répond aux
+						besoins du client en précisant un index, le nom de l’exigence, la description et la priorité
+						(élevée, moyenne, faible). En commençant par les fonctionnelles, qui soulignent les services ou
+						fonctions qui réalisera le système et en terminant avec les exigences non fonctionnelles qui ne
+						correspondent pas à la partie de service ou bien à un module. Ils correspondent à la partie
+						générale de l’application.
+					</p>
 				</li>
 			</ul>
 		</div>
@@ -400,7 +539,8 @@
 				<tr>
 					<th scope="row">8</th>
 					<td>Protection des vélos.</td>
-					<td>Le système permettra d'enregistrer la température et l'humidité d'un vélo pendant le trajet. Il sera également équipé d'une détection de chute.</td>
+					<td>Le système permettra d'enregistrer la température et l'humidité d'un vélo pendant le trajet. Il
+						sera également équipé d'une détection de chute.</td>
 					<td>Élevée.</td>
 				</tr>
 			</tbody>
@@ -456,7 +596,7 @@
 		<div class="card">
 			<div class="card-header">
 				<hr style="border: ridge;">
-				<h3>1.6 Devis</h3>
+				<h3>1.7 Devis</h3>
 				<hr style="border: ridge;">
 			</div>
 			<ul class="list-group list-group-flush">
@@ -526,7 +666,7 @@
 		<div class="card">
 			<div class="card-header">
 				<hr style="border: ridge;">
-				<h3>1.7 Méthodologie du projet</h3>
+				<h3>1.8 Méthodologie du projet</h3>
 				<hr style="border: ridge;">
 			</div>
 			<ul class="list-group list-group-flush">
@@ -553,7 +693,7 @@
 		<div class="card">
 			<div class="card-header">
 				<hr style="border: ridge;">
-				<h3>1.8 Planning du projet</h3>
+				<h3>1.9 Planning du projet</h3>
 				<hr style="border: ridge;">
 			</div>
 			<ul class="list-group list-group-flush">
@@ -571,38 +711,6 @@
 			<img src="img/diagramme-gantt.jpg" alt="Planning prévisionnel" style="border-style:ridge;">
 		</div>
 
-		<!--BIBLIOGRAPHIE -->
-		<hr style="border: solid;">
-		<div class="card">
-			<div class="card-header">
-				<hr style="border: ridge;">
-				<h3>Bibliographie</h3>
-				<hr style="border: ridge;">
-			</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">
-					<p>• Bicloo. (n.d). <em>Offers.</em> Bicloo.
-						https://www.bicloo.nantesmetropole.fr/fr/offers/groups/list#75720 .
-					</p>
-					<p>• Frandoid. (2021, 28 août). <em> Location de vélos en libre-service : les
-							applications à
-							connaître.</em> Frandoid.
-						https://www.frandroid.com/produits-android/mobilite-urbaine/velo-electrique/789201_location-de-velos-en-libre-service-les-applications-a-connaitre
-						.
-					</p>
-					<p>• Green Bike. (n.d). <em>Prices.</em> Green Bike. https://location-greenbike.com/?lang=en.
-					</p>
-					<p>• MathMyBike. (n.d). <em>Fonctionnement.</em> Math My Bike.
-						https://www.matchmybike.ch/
-					</p>
-					<p>• Vélhop. (n.d). <em>Accueil.</em> Vélhop.
-						https://velhop.strasbourg.eu/
-					</p>
-					<p>• Vélo'v. (n.d). <em>Home.</em> Vélo'v. https://velov.grandlyon.com/fr/home
-					</p>
-				</li>
-			</ul>
-		</div>
 	</div>
 	<br>
 	<!-- Footer -->
